@@ -1,4 +1,5 @@
-# Snowflake Monitoring on Azure (In active development)
+# Snowflake Monitoring on Azure 
+(In active development)
 
 [![Deploy](https://github.com/minchev91/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/minchev91/snowflake-events-monitoring/actions)
 
