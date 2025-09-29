@@ -1,6 +1,6 @@
 # Snowflake Monitoring on Azure
 
-[![Deploy](https://github.com/your-org/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-org/snowflake-events-monitoring/actions)
+[![Deploy](https://github.com/minchev91/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/minchev91/snowflake-events-monitoring/actions)
 
 ## 📌 Overview
 `snowflake-events-monitoring` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
