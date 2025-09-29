@@ -1,4 +1,4 @@
-# Snowflake Monitoring on Azure
+# Snowflake Monitoring on Azure (In active development)
 
 [![Deploy](https://github.com/minchev91/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/minchev91/snowflake-events-monitoring/actions)
 
@@ -123,13 +123,13 @@ For local testing, create a `local.settings.json` (not committed to git):
 The deployed Function App integrates with:
 - **Azure Application Insights** → Logs & metrics
 - **Azure Monitor** → Alerts and dashboards (optional extension)
-- **Log Analytics Workspace** (optional) for deeper queries
+- **Log Analytics Workspace** → Dependancy for App Insights
 
 ---
 
 ## 🛠 Roadmap
+- [ ] Make it actually work, the function code itself is fully functional
 - [ ] Add alerting via Azure Monitor
-- [ ] Add dashboards for Snowflake cost & performance
 - [ ] Support containerized deployment option
 - [ ] Extend to multi-environment setup (dev/test/prod)
 
