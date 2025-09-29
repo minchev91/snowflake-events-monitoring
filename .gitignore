@@ -1,0 +1,54 @@
+# --- General ---
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Python (function app) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+pip-wheel-metadata/
+*.sqlite3
+
+# --- Azure Functions ---
+local.settings.json   # contains secrets, DO NOT commit
+bin/
+obj/
+extensions.csproj
+
+# --- Terraform ---
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.crash
+.terraform/
+.terraform.lock.hcl
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- VSCode/IDE ---
+.vscode/
+.idea/
+*.iml
+
+# --- OS-generated ---
+ehthumbs.db
+Icon?
