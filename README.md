@@ -4,8 +4,8 @@
 
 ## 📌 Overview
 `snowflake-events-monitoring` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
-It collects logs from your Snowflake environment (ADMIN.UTILS.EVENT_logs) and integrates with Azure monitoring tools, making it easy to track usage, performance, and costs. This solution is loosely based on an old project that was focused on wuery history and security logs - [Snowflake log ingestion via Azure Functions](https://medium.com/@enleak/snowflake-log-ingestion-via-azure-functions-b7e575ce4ee2); 
-The current implementation has Function app rewritten completely, as well as a reworked deployment approach described below.
+It collects logs from your Snowflake environment (ADMIN.UTILS.EVENT_logs) and integrates with Azure monitoring tools, making it easy to track all events in your snowflake account with the correct severity levels. 
+This solution is loosely based on an old project that was focused on query history and security logs - [Snowflake log ingestion via Azure Functions](https://medium.com/@enleak/snowflake-log-ingestion-via-azure-functions-b7e575ce4ee2); the current implementation has Function app rewritten completely, as well as a reworked deployment approach described below.
 
 This project is fully automated with:
 - **Terraform** → Infrastructure provisioning (Function App, Storage, Key Vault, App Insights, etc.)
