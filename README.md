@@ -1,9 +1,9 @@
-# sf-mntr — Snowflake Monitoring on Azure
+# Snowflake Monitoring on Azure
 
-[![Deploy](https://github.com/your-org/sf-mntr/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-org/sf-mntr/actions)
+[![Deploy](https://github.com/your-org/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-org/snowflake-events-monitoring/actions)
 
 ## 📌 Overview
-`sf-mntr` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
+`snowflake-events-monitoring` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
 It collects metrics from your Snowflake environment and integrates with Azure monitoring tools, making it easy to track usage, performance, and costs.
 
 This project is fully automated with:
