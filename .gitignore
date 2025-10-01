@@ -45,7 +45,7 @@ override.tf.json
 *_override.tf.json
 
 # --- VSCode/IDE ---
-.vscode/
+
 .idea/
 *.iml
 
