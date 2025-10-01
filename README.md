@@ -1,12 +1,14 @@
-# sf-mntr — Snowflake Monitoring on Azure
+# Snowflake Monitoring on Azure 
+(In active development)
 
-[![Deploy](https://github.com/your-org/sf-mntr/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-org/sf-mntr/actions)
+[![Deploy](https://github.com/minchev91/snowflake-events-monitoring/actions/workflows/deploy.yml/badge.svg)](https://github.com/minchev91/snowflake-events-monitoring/actions)
 
 ## 📌 Overview
-`sf-mntr` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
-It collects metrics from your Snowflake environment and integrates with Azure monitoring tools, making it easy to track usage, performance, and costs.
+`snowflake-events-monitoring` is a **standalone monitoring solution** for Snowflake, deployed as an **Azure Function App**.  
+It collects logs from your Snowflake environment (ADMIN.UTILS.EVENT_logs) and integrates with Azure monitoring tools, making it easy to track all events in your snowflake account with the correct severity levels. 
 
-This project is fully automated with:
+This solution is loosely based on an old project that was focused on query history and security logs - [Snowflake log ingestion via Azure Functions](https://medium.com/@enleak/snowflake-log-ingestion-via-azure-functions-b7e575ce4ee2); the current implementation has Function app rewritten completely, as well as a reworked deployment approach described below:
+
 - **Terraform** → Infrastructure provisioning (Function App, Storage, Key Vault, App Insights, etc.)
 - **Azure Functions** → Serverless runtime for Snowflake monitoring logic
 - **Azure Key Vault** → Secure management of Snowflake credentials and configuration
@@ -122,13 +124,13 @@ For local testing, create a `local.settings.json` (not committed to git):
 The deployed Function App integrates with:
 - **Azure Application Insights** → Logs & metrics
 - **Azure Monitor** → Alerts and dashboards (optional extension)
-- **Log Analytics Workspace** (optional) for deeper queries
+- **Log Analytics Workspace** → Dependancy for App Insights
 
 ---
 
 ## 🛠 Roadmap
+- [ ] Make it actually work, the function code itself is fully functional
 - [ ] Add alerting via Azure Monitor
-- [ ] Add dashboards for Snowflake cost & performance
 - [ ] Support containerized deployment option
 - [ ] Extend to multi-environment setup (dev/test/prod)
 
